@@ -12,7 +12,7 @@ const Navbar2= () => {
    }
 
   return ( <>
-            <div id="navbar-container" className=" bg-none pl-3 md:pl-10 pr-8 sm:pr-0 md:pr-0 flex justify-between content-center items-center w-[100%] h-[8rem]  ">
+            <div id="navbar-container" className=" bg-none pl-3 md:pl-10 pr-8 sm:pr-0 md:pr-0 flex justify-between content-center items-center w-[100%] md:h-[6rem] lg:h-[8rem]  ">
                 <div id="logo">
                     <img id="nav-img" src="../assets/shared/logo.svg" />
                 </div>
@@ -20,9 +20,9 @@ const Navbar2= () => {
                     <div className='navbar-line '></div>
                 </div>
                 <div id="nav-items">
-                    <div className="h-[90%] w-[auto] flex content-center items-center text-lg"><span className="mr-3 font-extrabold text-lg ">00</span> Home</div>
+                    <NavLink to='/' ><div className="h-[90%] w-[auto] flex content-center items-center text-lg"><span className="mr-3 font-extrabold text-lg ">00</span> Home</div></NavLink>
                     <NavLink to="distenations" ><div className="h-[90%] w-[auto] flex content-center items-center text-lg"><span className="mr-3 font-extrabold text-lg ">01</span> Distenations</div></NavLink>
-                    <div className="h-[90%] w-[auto] flex content-center items-center text-lg"><span className="mr-3 font-extrabold text-lg ">00</span> Home</div>
+                    <NavLink to="crew" ><div className="h-[90%] w-[auto] flex content-center items-center text-lg"><span className="mr-3 font-extrabold text-lg ">02</span> CREW</div></NavLink>
                     <div className="h-[90%] w-[auto] flex content-center items-center text-lg"><span className="mr-3 font-extrabold text-lg ">00</span> Home</div>
                 </div>
                 <div id="button" className='h-[auto] w-[2.5rem] hover:cursor-pointer text-white flex content-center items-center justify-center flex-col mr-2 rounded-md' onClick={handleClick} >

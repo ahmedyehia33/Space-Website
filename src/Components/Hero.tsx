@@ -1,9 +1,11 @@
 import "./hero.css";
+import Navbar2 from "./Navbar2";
 
 
 const Hero= () => {
   return ( <>
-                 <div id="homepage-container" className="pt-0 sm:pt-0 md:pt-[2rem] h-full w-full flex flex-col">
+                 <div id="homepage-container" className="pt-0 sm:pt-0  h-full w-full flex flex-col">
+                    <Navbar2/>
                 
                 <div id="homepage" className="h-full w-full flex flex-col  md:flex-row content-center sm:content-baseline px-[3rem] pt-[5rem] sm:pt-[8rem]  md:pt-[10rem]  pb-[5rem]">
                   <div className="w-[100%] text-center sm:text-center md:text-center flex content-center h-full items-center pl-1 sm:pl-10 md:pl-20 ">
