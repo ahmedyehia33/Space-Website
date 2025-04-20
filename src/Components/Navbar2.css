@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+#logo{
+    
+    min-height: 4rem;
+    min-width: 4rem;
+
+}
+#nav-img{
+    width:100%;
+    object-fit: cover;
+    object-position: center;
+}
+.navbar-line{
+    width:20rem;
+    height:0.5px;
+    background-color: rgb(25, 27, 38);
+    filter: drop-shadow(30px 10px 4px #2f2f33);
+    min-width: 30%;
+}
+#nav-items{
+            width:60%;
+            height:6rem;
+            max-width:45rem;
+            background-color: rgba(25, 27, 38,0.9);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            padding-left: 10%;
+            padding-right: 3rem;
+            color:wheat;
+            font-size: 1.1rem;
+}
+#button{
+        display: none;
+}
+.menu-appear{
+    display: block;
+    color: aquamarine;
+    position: absolute;
+    top:0rem;
+    right:0;
+    width:70%;
+    height: 825px;
+    background-color: rgba(25, 27, 38,0.99);
+   /* background-image: linear-gradient(to bottom, #000000, #151314, #212021, #2e2c2f, #3b3a3e, #3b3a3e, #3b3a3e, #3b3a3e, #2e2c2f, #212021, #151314, #000000),
+    url('../assets/home/background-home-desktop.jpg');*/
+    
+}
+.Menu{
+    display:none;
+}
+@media (min-width: 0px) and (max-width: 700px){
+    #button{
+        display: flex;
+    }
+    #nav-items{
+        display: none;
+    }
+
+}
+@media (min-width: 700px) and (max-width: 900px){
+    #nav-items{
+        width:80%
+    }
+}
+@media (min-width: 700px) and (max-width: 2500px){
+   .menu-appear{
+    display: none;
+   }
+
+}
+@media (min-width: 100px) and (max-width: 900px){
+    #header-line{
+        display: none;
+    }
+}

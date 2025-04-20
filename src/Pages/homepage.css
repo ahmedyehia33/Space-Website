@@ -1,0 +1,48 @@
+#homepage-container{
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-position: center;
+    background-size:cover;
+    height: auto;  
+    min-height: auto;
+    width: 100%;
+}
+#explore-button:hover{
+    outline:6rem solid rgba(236, 232, 232, 0.1);
+    cursor: pointer;
+    color: rgba(59, 52, 52, 0.6);
+    transition: outline 1s ease,  color 1s ease;
+    
+}
+@media (min-width: 600px) and (max-width: 1024px){
+    #homepage{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 500px) and (max-width: 800px){
+    #explore-button:hover{
+        outline:3rem solid rgba(236, 232, 232, 0.1);
+        cursor: pointer;
+        color: rgba(59, 52, 52, 0.6);
+        transition: outline 1s ease,  color 1s ease;
+    }
+    #homepage-container{
+        background-image: url('../assets/home/background-home-tablet.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media (min-width: 200px) and (max-width: 500px){
+    #explore-button:hover{
+        outline:2rem solid rgba(236, 232, 232, 0.1);
+        cursor: pointer;
+        color: rgba(59, 52, 52, 0.6);
+        transition:color 0.5s ease;
+        }
+        #homepage-container{
+            background-image: url('../assets/home/background-home-mobile.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+}
+

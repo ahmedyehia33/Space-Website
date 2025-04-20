@@ -1,0 +1,29 @@
+#navbar-items{
+    background: rgba(59, 52, 52, 0.6);
+    filter: drop-shadow(30px 10px 4px #2f2f33);
+    
+    padding-left:6rem;
+   
+}
+#header-line{
+    background:  rgba(61, 60, 60, 1);
+    filter: blur(0.5px);
+}
+@media (min-width: 600px) and (max-width: 980px){
+    #header-line{
+        display: none;
+    }
+}
+@media (min-width: 601px) and (max-width: 800px){
+    #navbar-items{
+        width: 500px;
+    }
+}
+@media (min-width: 240px) and (max-width: 600px){
+    #navbar-items{
+        display:none;
+    }
+    #header-line{
+        display: none;
+    }
+}
