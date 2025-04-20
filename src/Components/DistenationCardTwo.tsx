@@ -17,13 +17,13 @@ const Destinations= () => {
   className="flex flex-col" >
             <Navbar2/>
             <div 
-             className="flex flex-col  space-y-10 md:justify-center w-full py-[2rem] px-[2rem] lg:p-[8rem] pt-[1rem] lg:px-[3rem] justify-center items-center">
+             className="flex flex-col  space-y-10 md:justify-center w-full py-[2rem] px-[2rem] lg:p-[2rem] pt-[1rem] lg:px-[3rem] justify-center items-center">
                 
-                    <div className="name  md:pl-5  w-full ">
-                    <h2 className="text-white font-barlow md:font-thin md:text-2xl tracking-wider text-center md:text-start"> <span className="mr-4 font-bold text-white opacity-25">01 </span>PICK YOUR DESTINATION</h2>
+                    <div className="name  md:pl-28  w-full md:mb-20 ">
+                    <h2 className="text-white font-barlow md:font-thin md:text-4xl tracking-wider text-center md:text-start"> <span className="mr-4 font-bold text-white opacity-25">01 </span>PICK YOUR DESTINATION</h2>
                     </div>
-            <div className="flex flex-col lg:flex-row sm:w-full  md:w-[90%] justify-center items-center gap-5">
-                    <div className="destiantion-image h-[150px] w-[150px] md:h-[480px] md:w-[480px] md:mb-[3rem]">
+            <div className="flex flex-col lg:flex-row sm:w-full  md:w-[90%] justify-center items-center gap-10">
+                    <div className="destiantion-image h-[150px] w-[150px] md:h-[480px] md:w-[480px] ">
                         <img src={selectedDest.images.png}className="w-full " />
                     </div>
                 
@@ -48,7 +48,7 @@ const Destinations= () => {
               </div>
               <div className="w-full h-[2px]  bg-white opacity-25"></div>
 
-              <div className="flex flex-col gap-5 items-center md:flex-row lg:px-0 justify-between lg:justify-start md:px-20 ">
+              <div className="flex flex-col gap-5  items-center md:flex-row lg:px-0 justify-between lg:justify-start md:px-20 ">
                 <div className="flex-col justify-center items-center text-center w-full space-y-4">
                     <div className="font-barlow text-blue-300 font-lg">AVG. DISTANCE</div>
                     <div className="font-bellefair text-white text-3xl">{selectedDest.distance.toUpperCase()}</div>
