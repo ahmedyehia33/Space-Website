@@ -5,6 +5,7 @@ import './Navbar2.css';
 
 
 
+
 const Navbar2= () => {
    const [collapsed, setCollapsed] = useState(true);
    const handleClick =()=>{
@@ -21,9 +22,9 @@ const Navbar2= () => {
                 </div>
                 <div id="nav-items">
                     <NavLink to='/' ><div className="h-[90%] w-[auto] flex content-center items-center text-lg"><span className="mr-3 font-extrabold text-lg ">00</span> Home</div></NavLink>
-                    <NavLink to="distenations" ><div className="h-[90%] w-[auto] flex content-center items-center text-lg"><span className="mr-3 font-extrabold text-lg ">01</span> Distenations</div></NavLink>
-                    <NavLink to="crew" ><div className="h-[90%] w-[auto] flex content-center items-center text-lg"><span className="mr-3 font-extrabold text-lg ">02</span> CREW</div></NavLink>
-                    <div className="h-[90%] w-[auto] flex content-center items-center text-lg"><span className="mr-3 font-extrabold text-lg ">00</span> Home</div>
+                    <NavLink to="/distenations" ><div className="h-[90%] w-[auto] flex content-center items-center text-lg"><span className="mr-3 font-extrabold text-lg ">01</span> Distenations</div></NavLink>
+                    <NavLink to="/crew" ><div className="h-[90%] w-[auto] flex content-center items-center text-lg"><span className="mr-3 font-extrabold text-lg ">02</span> CREW</div></NavLink>
+                    <NavLink to="/technologies" > <div className="h-[90%] w-[auto] flex content-center items-center text-lg"><span className="mr-3 font-extrabold text-lg ">03</span> TECHNOLOGY</div></NavLink>
                 </div>
                 <div id="button" className='h-[auto] w-[2.5rem] hover:cursor-pointer text-white flex content-center items-center justify-center flex-col mr-2 rounded-md' onClick={handleClick} >
                     {collapsed ? (<div className="w-[100%] h-[100%] flex content-center items-center justify-center flex-col gap-1">
