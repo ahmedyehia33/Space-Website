@@ -27,7 +27,7 @@ const [selectedTechnology , setSelectedTechnology] = useState(technology[0]);
                                 {technology.map((techno) => 
                                 <div key={techno.id}
                                 onClick={()=> setSelectedTechnology(techno)}
-                                className={`h-[50px] w-[50px] lg:h-[70px] lg:w-[70px] font-bellefair rounded-full border-2 border-[#D0D6F9] flex items-center justify-center text-xl
+                                className={`h-[50px] w-[50px] lg:h-[70px] lg:w-[70px] font-bellefair rounded-full border-2 border-[#D0D6F9] flex items-center justify-center text-xl lg:text-3xl
                                     ${selectedTechnology.name === techno.name ? 'bg-white text-black' : 'bg-transparent text-white'}
                                   `} >
                                     {techno.id}
@@ -37,7 +37,7 @@ const [selectedTechnology , setSelectedTechnology] = useState(technology[0]);
                             </div>
                             <div className='flex flex-col text-center lg:text-start gap-5'>
                             <div className="text-2xl md:text-4xl text-white font-bellefair opacity-50 lg:pl-4">
-                                THE TERMONOLGY..
+                                THE TERMONOLGY...
                             </div>
                             
                             <div className="text-2xl md:text-5xl  lg:w-full lg:pl-4 lg:text-start lg:tracking-widest text-white font-bellefair">
