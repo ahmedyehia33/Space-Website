@@ -24,7 +24,9 @@ const Destinations= () => {
                     </div>
             <div className="flex flex-col lg:flex-row sm:w-full  md:w-[90%] justify-center items-center gap-10">
                     <div className="destiantion-image h-[150px] w-[150px] md:h-[480px] md:w-[480px] ">
-                        <img src={selectedDest.images.png}className="w-full " />
+                        <img src={selectedDest.images.png} 
+                        style={{objectFit:'cover', objectPosition:'center'}}
+                        className="w-full  " />
                     </div>
                 
                 <div className="flex-col w-full md:w-[90%] lg:w-[50%]  items-center justify-center space-y-[40px] lg:pl-[2rem]">
@@ -32,7 +34,7 @@ const Destinations= () => {
                 {destinations.map((dest) => (
                   <div key={dest.name} onClick={()=> handleClick(dest)}
                   className="text-3xl  font-semibold  ">
-                    <span className={selectedDest.name == dest.name? 'active pb-3 hover:cursor-pointer text-white font-barlow font-thin' : 'not-active font-barlow font-thin text-blue-300 hover:cursor-pointer tracking-wide'}>{dest.name}</span>
+                    <span className={selectedDest.name == dest.name? 'active pb-3 hover:cursor-pointer text-white font-barlow font-thin' : 'not-active font-barlow font-thin text-[#D0D6F9] hover:cursor-pointer tracking-wide'}>{dest.name}</span>
                   </div>
                 ))}
 
@@ -41,7 +43,7 @@ const Destinations= () => {
                     <h3 className="text-6xl my-10 md:my-0 md:text-8xl text-white font-bellefair">{selectedDest.name.toUpperCase()}</h3>
               </div>
               <div className="flex w-full justify-center lg:justify-start">
-                <p className="text-2xl text-blue-300 font-barlow leading-loose text-center lg:text-start">
+                <p className="text-xl text-[#D0D6F9] font-barlow leading-loose text-center lg:text-start">
                     {selectedDest.description}
                 </p>
 
@@ -50,11 +52,11 @@ const Destinations= () => {
 
               <div className="flex flex-col gap-5  items-center md:flex-row lg:px-0 justify-between lg:justify-start md:px-20 ">
                 <div className="flex-col justify-center items-center text-center w-full space-y-4">
-                    <div className="font-barlow text-blue-300 font-lg">AVG. DISTANCE</div>
+                    <div className="font-barlow text-[#D0D6F9] font-lg">AVG. DISTANCE</div>
                     <div className="font-bellefair text-white text-3xl">{selectedDest.distance.toUpperCase()}</div>
                 </div>
                 <div className="flex-col w-full justify-center items-center text-center space-y-4">
-                    <div className="font-barlow text-blue-300 font-lg">Est. travel time</div>
+                    <div className="font-barlow text-[#D0D6F9] font-lg">Est. travel time</div>
                     <div className="font-bellefair text-white text-3xl">{selectedDest.travel.toUpperCase()}</div>
                 </div>
               </div>

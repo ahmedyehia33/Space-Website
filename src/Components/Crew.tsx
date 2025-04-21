@@ -24,7 +24,7 @@ const Crew= () => {
                             <div className="text-2xl md:text-5xl  lg:w-full lg:text-start lg:tracking-widest text-white font-bellefair">
                                 {selectedCrewMember.name.toUpperCase()}
                             </div>
-                            <div className="text-[#D0D6F9] md:w-[40%] lg:w-[90%] lg:leading-relaxed lg:text-2xl text-lg md:text-xl md:text-center lg:text-start font-barlow">
+                            <div className="text-[#D0D6F9] md:w-[40%] lg:w-[90%] lg:leading-relaxed lg:text-xl text-lg md:text-xl md:text-center lg:text-start font-barlow">
                                 {selectedCrewMember.bio}
                             </div>
                             <div className="w-full flex justify-center gap-4 lg:justify-start lg:mt-[4rem] lg:gap-10">
